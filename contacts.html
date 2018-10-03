@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Персональный сайт Гридасовой Карины. Связь со мной.</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script/check.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -24,33 +25,37 @@
             </ul>
         </nav>
         <section>
-            <form id="contacts" action="mailto:quartz_90@mail.ru" method="post">
+            <form id="contacts" action="mailto:quartz_90@mail.ru" method="post" name="contactsForm" onsubmit="return checkData()">
                 <h3>Для связи со мной напишите свои личные данные и задайте вопрос.</h3>
                 <p>Ваше ФИО:<br>
-                    <input type="text" size="40" name="FIO" class="inputLength1" required>
+                    <input type="text" size="40" name="FIO" class="inputLength1" placeholder="Ваше ФИО">
+                </p>
+                <p>Ваш телефон:<br>
+                    <input type="tel" name="tel">
                 </p>
                 <p>Ваш пол<br>
-                    <input type="radio" name="pol" value="a1" checked>Мужской<br>
+                    <input type="radio" name="pol" value="a1">Мужской<br>
                     <input type="radio" name="pol" value="a2">Женский<br>
                 </p>
                 <p>Ваш возраст: <br>
                     <select name="age">
-                        <option value="0">от 15 до 18</option>
-                        <option value="0" selected>от 19 до 22</option>
-                        <option value="0">от 23 до 26</option>
-                        <option value="0">от 27 до 30</option>
-                        <option value="0">от 31 до 34</option>
-                        <option value="0">от 35 до 38</option>
-                        <option value="0">от 39 до 42</option>
-                        <option value="0">от 43 до 46</option>
-                        <option value="0">от 47 до 50</option>
-                        <option value="0">от 51 до 54</option>
+                        <option value="">Выберите свой возраст</option>
+                        <option value="от 15 до 18">от 15 до 18</option>
+                        <option value="от 19 до 22">от 19 до 22</option>
+                        <option value="от 23 до 26">от 23 до 26</option>
+                        <option value="от 27 до 30">от 27 до 30</option>
+                        <option value="от 31 до 34">от 31 до 34</option>
+                        <option value="от 35 до 38">от 35 до 38</option>
+                        <option value="от 39 до 42">от 39 до 42</option>
+                        <option value="от 43 до 46">от 43 до 46</option>
+                        <option value="от 47 до 50">от 47 до 50</option>
+                        <option value="от 51 до 54">от 51 до 54</option>
                     </select>
                 </p>
                 <p>Ваш e-mail:<br>
-                    <input type="email" name="email" required class="inputLength1">
+                    <input type="email" name="email" class="inputLength1" placeholder="Ваш e-mail">
                 </p>
-                <textarea name="question" placeholder="Напишите свой вопрос" required></textarea>
+                <textarea name="question" placeholder="Напишите свой вопрос"></textarea>
                 <input type="submit" name="submit" class="submit" form="contacts">
             </form>
         </section>
