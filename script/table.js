@@ -30,4 +30,3 @@ function paintTable() {
     }
     document.write("</table>");
 }
-paintTable();
