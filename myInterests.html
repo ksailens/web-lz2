@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Персональный сайт Гридасовой Карины. Мои интересы.</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script/list.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -30,40 +31,25 @@
             <a href="#loveBook">Любимые книги</a>
             <a href="#loveCinema" class="last">Любимые фильмы</a>
             <div class="clear"></div>
-            <ul class="myHobbies" type="circle"><a name="hobbi"></a>
-                <li>Крепко спать</li>
-                <li>Вкусно есть</li>
-            </ul>
+            <a name="hobbi"></a>
+            <script>
+                list("u","myHobbies","circle","Крепко спать","Вкусно есть")
+            </script>
             <a name="loveMusic"></a>
             <img id="pictureMusic" src="img/music.jpg" width="300px" height="300px" alt="">
-            <ol class="loveMusic" type="a">
-                <li>БИ-2</li>
-                <li>Brainstorm</li>
-                <li>Кино</li>
-                <li>Король и шут</li>
-                <li>The Retuses</li>
-                <li>Мумий Троль</li>
-                <li>ДДТ</li>
-            </ol>
+            <script>
+                list("o","loveMusic","a","БИ-2","Brainstorm","Кино","Король и Шут","The Retuses","Мумий Троль","ДДТ")
+            </script>
             <a name="loveBook"></a>
             <img id="pictureBooks" src="img/books.png" width="400px" height="300px" alt="">
-            <ul class="loveBooks" type="square">
-                <li>Виктор Гюго. Отверженные</li>
-                <li>Виктор Гюго. Человек, который смеется</li>
-                <li>Валентин Пикуль. Битва железных канцлеров</li>
-            </ul>
+            <script>
+                list("u",'loveBooks',"square","Виктор Гюго. Отверженные","Виктор Гюго. Человек, который смеется","Валентин Пикуль. Битва железных канцлеров")
+            </script>
             <a name="loveCinema"></a>
-            <ol class="loveCinema" type="1">
-                <img src="img/cinema.jpg" width="300px" height="300px" alt="">
-                <li>Король говорит!</li>
-                <li>Трилогия Хоббит</li>
-                <li>Трилогия Властелин Колец</li>
-                <li>Трилогия Матрица</li>
-                <li>Железная леди</li>
-                <li>Коллектор</li>
-                <li>Константин: Повелитель тьмы</li>
-                <li>Запах женщины</li>
-            </ol>
+            <img id="pictureCinema" src="img/cinema.jpg" width="300px" height="300px" alt="">
+            <script>
+                list("o","loveCinema","1","Король говорит!","Трилогия Хоббит","Трилогия Властелин Колец","Трилогия Матрица","Железная леди","Коллектор","Константин: Повелитель тьмы","Запах женщины")
+            </script>
         </section>
     </div>
     <footer>

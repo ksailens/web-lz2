@@ -290,17 +290,13 @@ section h3  {
     font-size: 30px;
     text-align: center;
     list-style-position: inside;
-    margin-top: 150px;
     margin-bottom: 150px;
 }
-#pictureMusic {
+#pictureMusic, #pictureBooks, #pictureCinema {
     display: block;
     margin: 80px auto 0;
 }
-#pictureBooks {
-    display: block;
-    margin: 80px auto 0;
-}
+
 
 /*страница теста */
 #tests {
