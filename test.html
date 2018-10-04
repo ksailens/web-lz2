@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Персональный сайт Гридасовой Карины. Тестирование.</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script/checkTest.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -25,14 +26,17 @@
         </nav>
         <section>
             <h2>Тест по дисциплине "Безопасность жизнедеятельности"</h2>
-            <form id="tests" action="mailto:quartz_90@mail.ru" method="post">
+            <form id="tests" action="mailto:quartz_90@mail.ru" method="post" name="testForm" onsubmit="return checkTestData()">
                 <fieldset class="fSet1">
                     <legend>Заполните все поля и дайте правильные ответы</legend>
                     <p>Ваше ФИО:<br>
-                        <input type="text" size="40" name="FIO" class="inputLength1" required>
+                        <input type="text" size="40" name="FIO" class="inputLength1" title="Фамилия Имя Отчество полностью" placeholder="Фамилия Имя Отчество полностью">
                     </p>
                     <p>Ваша группа:<br>
                         <select name="groups">
+                            <optgroup label="">
+                                <option disabled selected value="choice">Выберите свою группу</option>
+                            </optgroup>
                             <optgroup label="1 курс">
                                 <option value="11">ИС/б-11-о</option>
                                 <option value="12">ИС/б-12-о</option>
@@ -45,7 +49,7 @@
                             <optgroup label="3 курс">
                                 <option value="31">ИС/б-31-о</option>
                                 <option value="32">ИС/б-32-о</option>
-                                <option value="33" selected>ИС/б-33-о</option>
+                                <option value="33">ИС/б-33-о</option>
                             </optgroup>
                             <optgroup label="4 курс">
                                 <option value="41">ИС/б-41-о</option>
@@ -58,21 +62,21 @@
                         <legend>Вопрос №1</legend>
                         <p>Чрезвычайные ситуации техногенного характера (классификация, причины их возникновения, последствия,
                             ликвидация и действие населения на любом примере ЧС техногенного характера.<br>
-                            <textarea name="answer" placeholder="Напишите свой ответ" required></textarea>
+                            <textarea name="answer" placeholder="Напишите свой ответ"></textarea>
                         </p>
                     </fieldset>
-                    <fieldset class="fSet3">
+                    <fieldset class="fSet3" title="Выберите один из вариантов">
                         <legend>Вопрос №2</legend>
                         <p>Убежища малой вместительности:<br>
-                            <input type="radio" name="answer_r" value="r1" required>до 100 чел.<br>
-                            <input type="radio" name="answer_r" value="r2" required>до 600 чел.<br>
-                            <input type="radio" name="answer_r" value="r3" required>до 1000 чел.<br>
+                            <input type="radio" name="answer_r" value="r1">до 100 чел.<br>
+                            <input type="radio" name="answer_r" value="r2">до 600 чел.<br>
+                            <input type="radio" name="answer_r" value="r3">до 1000 чел.<br>
                         </p>
                     </fieldset>
-                    <fieldset class="fSet4">
+                    <fieldset class="fSet4" title="Выберите один из вариантов">
                         <legend>Вопрос №3</legend>
                         <p>Признаки отравления угарным газом?<br>
-                            <select size="1" name="answ_sel[]">
+                            <select size="1" name="answ_sel">
                                 <option disabled selected>Выберите ответ</option>
                                 <option value="true_1">Слабость, тошнота, рвота, головокружение, покраснение кожных покровов</option>
                                 <option value="false_0">Слабость, головокружение, побледнение кожных покровов</option>

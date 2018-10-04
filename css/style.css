@@ -385,3 +385,8 @@ section h3  {
     margin: 3px 3px 0 0;
 }
 
+/* стили для скриптов */
+.inputLength1:focus {
+    background: #ffe; /* Цвет фона */
+    border: 1px solid red; /* Параметры рамки */
+}
