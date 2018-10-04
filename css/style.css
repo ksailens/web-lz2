@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 html, body, .wrapper {
     height: 100%;
@@ -8,17 +8,17 @@ html, body, .wrapper {
 body {
     display: block;
     background: #ecf0f1;
-
+    background: url("../img/fon.jpg") repeat;
 }
 .wrapper {
-    width: 750px;
+    width: 900px;
     margin: 0 auto;
 
 }
 footer {
     height: 80px;
     margin-top: -80px;
-    background: #8bb2f0;
+    background: #afd6f5;
     clear: both;
 }
 
@@ -118,10 +118,11 @@ section h2 {
 
 .tableMainPage {
     width: 700px;
+    margin: 0 auto;
     text-align: center;
     border: 4px double #3c6b92;
     background: black;
-    margin: 100px auto 0;
+    margin-top: 100px;
 }
 
 .tableMainPage tr {
@@ -230,7 +231,7 @@ section h2 {
 }
 
 section h3  {
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: Impact, sans-serif;
     text-align: center;
     margin-top: 30px;
 }
@@ -290,13 +291,17 @@ section h3  {
     font-size: 30px;
     text-align: center;
     list-style-position: inside;
+    margin-top: 150px;
     margin-bottom: 150px;
 }
-#pictureMusic, #pictureBooks, #pictureCinema {
+#pictureMusic {
     display: block;
     margin: 80px auto 0;
 }
-
+#pictureBooks {
+    display: block;
+    margin: 80px auto 0;
+}
 
 /*страница теста */
 #tests {
@@ -385,8 +390,15 @@ section h3  {
     margin: 3px 3px 0 0;
 }
 
-/* стили для скриптов */
-.inputLength1:focus {
-    background: #ffe; /* Цвет фона */
-    border: 1px solid red; /* Параметры рамки */
+/*автобиография*/
+
+.autobiography p {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
 }
+
+/*----------------*/
