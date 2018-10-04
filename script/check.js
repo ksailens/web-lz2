@@ -42,11 +42,3 @@ function checkData() {
 
     return valid;
 }
-
-
-/* function checkWord() {
-     var textArea = elems.question.value;
-     var wordCounter = textArea.split(' ');
-     alert(wordCounter);
- }
-*/
