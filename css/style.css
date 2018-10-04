@@ -133,8 +133,7 @@ section h2 {
 #contacts {
     width: 600px;
     border: 1px solid;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin: 40px auto 0;
     background: #8bb2f0;
     overflow: hidden;
 }
@@ -183,7 +182,7 @@ section h2 {
 .album {
     width: 740px;
     border: 1px solid;
-    margin: 20px auto 0;
+    margin: 20px auto 50px;
     background: #851337;
 }
 
@@ -231,7 +230,7 @@ section h2 {
 }
 
 section h3  {
-    font-family: Impact, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     text-align: center;
     margin-top: 30px;
 }
@@ -291,14 +290,9 @@ section h3  {
     font-size: 30px;
     text-align: center;
     list-style-position: inside;
-    margin-top: 150px;
     margin-bottom: 150px;
 }
-#pictureMusic {
-    display: block;
-    margin: 80px auto 0;
-}
-#pictureBooks {
+#pictureMusic, #pictureBooks, #pictureCinema {
     display: block;
     margin: 80px auto 0;
 }
@@ -306,9 +300,7 @@ section h3  {
 /*страница теста */
 #tests {
     width: 640px;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin: 30px auto 50px;
     overflow: hidden;
 }
 #tests h3   {
@@ -351,6 +343,7 @@ section h3  {
 #tests fieldset {
     background: #8bb2f0;
 }
+
 .fSet2, .fSet3, .fSet4 {
     width: 500px;
     float: left;
@@ -402,3 +395,8 @@ section h3  {
 }
 
 /*----------------*/
+/* стили для скриптов */
+input:focus, textarea:focus {
+    background: #ffe; /* Цвет фона */
+    border: 1px solid red; /* Параметры рамки */
+}
